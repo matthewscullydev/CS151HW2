@@ -24,8 +24,7 @@ public abstract class Person extends Address {
 	@Override
 	public String toString() {
 		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", ssn=" + ssn
-				+ ", address=" + address + ", streetnum=" + streetnum + ", streetName=" + streetName + ", city=" + city
-				+ ", zip=" + zip + ", state=" + state + "]";
+				+ ", address=" + address;
 	}
 
 

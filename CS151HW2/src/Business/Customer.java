@@ -1,5 +1,5 @@
 package Business;
-
+import java.lang.*;
 public class Customer extends Person {
 
 	
@@ -30,19 +30,32 @@ public class Customer extends Person {
 	@Override
 	public String toString() {
 		return "Customer [customerID=" + customerID + ", payPreference=" + payPreference + ", firstName=" + firstName
-				+ ", lastName=" + lastName + ", age=" + age + ", ssn=" + ssn + ", address=" + address + ", streetnum="
-				+ streetnum + ", streetName=" + streetName + ", city=" + city + ", zip=" + zip + ", state=" + state
-				+ "]";
+				+ ", lastName=" + lastName + ", age=" + age + ", ssn=" + ssn + ", address=" + address;
+			
 	}
+	
 
+
+	public String toString(boolean test) {
+		return "Customer [customerID=" + customerID + ", payPreference=" + payPreference + ", firstName=" + firstName
+				+ ", lastName=" + lastName + ", age=" + age + ", address=" + address;
+			
+	}
+	
+	
 	public void introduce()
 	
 	{
-		System.out.println("sup");
+			boolean noSsn = true;
+			String intro = toString(noSsn);
+			
+			System.out.println(intro);
 		
 	}
 	
 	public void makePayment(){
+		
+			System.out.println(this.payPreference);
 		
 	}
 

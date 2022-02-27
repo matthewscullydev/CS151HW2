@@ -4,13 +4,13 @@ public class BusinessTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Address a = new Address(2, "sad", "sada","ds", "asd");
+		Address a = new Address(2403, "Marriot Lane", "San Jose","95122", "California");
 		//create subclass of Person
-		Customer c = new Customer("fdasf ", " esfa ", a, 32, 23, " yes", "ad");
+		Customer c = new Customer("Paul", " Walker ", a, 32156, 23, "123428664", "Debit Card");
 		
 		c.introduce();
-		String s = c.toString();
-		System.out.println(s);
+		c.makePayment();
+
 	}
 
 }
