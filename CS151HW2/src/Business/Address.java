@@ -9,12 +9,12 @@ public class Address {
 	}
 
 	int streetnum;
-	int streetName;
+	String streetName;
 	String city;
 	String zip;
 	String state;
 	
-	Address(int streetnum, int streetName, String city, String zip, String state){
+	Address(int streetnum, String streetName, String city, String zip, String state){
 		
 		setCity(city);
 		setZip(zip);
@@ -32,11 +32,11 @@ public class Address {
 		this.streetnum = streetnum;
 	}
 
-	public int getStreetName() {
+	public String getStreetName() {
 		return streetName;
 	}
 
-	public void setStreetName(int streetName) {
+	public void setStreetName(String streetName) {
 		this.streetName = streetName;
 	}
 

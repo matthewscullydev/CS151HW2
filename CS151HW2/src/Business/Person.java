@@ -2,8 +2,9 @@ package Business;
 
 public abstract class Person extends Address {
 
-
-	Person(int streetnum, int streetName, String city, String zip, String state, String firstname, String lastname, int age, String ssn, Address address) {
+	
+	
+	Person(int streetnum, String streetName, String city, String zip, String state, String firstname, String lastname, int age, String ssn, Address address) {
 		super(streetnum, streetName, city, zip, state);
 		
 		setFirstName(firstname);
