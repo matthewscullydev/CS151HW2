@@ -6,7 +6,7 @@ public class BusinessTest {
 		// TODO Auto-generated method stub
 		Address a = new Address(2, "sad", "sada","ds", "asd");
 		//create subclass of Person
-		Customer c = new Customer(a.streetnum, a.streetName, a.city,a.zip, a.state, "Matt", "Scully", 21 , "732429844", a, 123, "ye");
+		Customer c = new Customer("fdasf ", " esfa ", a, 32, 23, " yes", "ad");
 		
 		c.introduce();
 		String s = c.toString();

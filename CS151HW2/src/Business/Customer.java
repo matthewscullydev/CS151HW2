@@ -46,15 +46,20 @@ public class Customer extends Person {
 		
 	}
 
-
-	public Customer(int streetnum, String streetName, String city, String zip, String state, String firstname,
-			String lastname, int age, String ssn, Address address, int customerID, String payPreference) {
-		super(streetnum, streetName, city, zip, state, firstname, lastname, age, ssn, address);
+	public Customer()
+	{
+		super();
+		
+	}
+	
+	
+	public Customer(String firstName, String lastName, Address address, int customerID, int age, String ssn, String payPreference) {	
+		super(firstName,lastName,age,ssn, address);
 		// TODO Auto-generated constructor stub
-		setCustomerID(customerID);
-		setPayPreference(payPreference);
-		
-		
+
+		this.customerID = customerID;
+		this.payPreference = payPreference;
+
 	}
 
 		

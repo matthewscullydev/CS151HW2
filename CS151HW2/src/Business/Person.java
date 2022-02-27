@@ -2,10 +2,13 @@ package Business;
 
 public abstract class Person extends Address {
 
+	public Person()
+	{
+		super(0,"","","","");
+	}
 	
-	
-	Person(int streetnum, String streetName, String city, String zip, String state, String firstname, String lastname, int age, String ssn, Address address) {
-		super(streetnum, streetName, city, zip, state);
+	public Person (String firstname, String lastname, int age, String ssn, Address address) {
+		super(address.streetnum, address.streetName, address.city, address.zip, address.state);
 		
 		setFirstName(firstname);
 		setLastName(lastname);
