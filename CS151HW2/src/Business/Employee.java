@@ -42,5 +42,10 @@ public abstract class Employee extends Person{
 		this.directDeposit = directDeposit;
 	}
 
-
+	public float computePay() {
+			
+		float result = 0;
+		
+		return result;
+	}
 }

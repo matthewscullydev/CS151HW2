@@ -66,9 +66,9 @@ public class Executive extends Employee{
 		}
 	}
 	
-	public double computePay() {
+	public float computePay() {
 		
 		
-		return yearlyBonus;
+		return (float) yearlyBonus;
 	}
 }

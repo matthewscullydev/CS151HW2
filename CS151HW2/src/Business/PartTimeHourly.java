@@ -58,7 +58,8 @@ public class PartTimeHourly extends Employee {
 		}
 	}
 
-	public double computePay() {
-		return baseHourlyPay;
+	public float computePay() {
+		
+		return (float) baseHourlyPay;
 	}
 }
