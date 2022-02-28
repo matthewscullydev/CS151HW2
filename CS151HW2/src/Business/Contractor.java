@@ -41,7 +41,16 @@ public class Contractor extends Employee {
 	}
 
 	
-public void introduce(boolean displaySsn){
+	
+	public float computePay(int basePay, int hours)
+	{
+		basePay = hours*basePay;
+		
+		return basePay;
+		
+	}
+	
+	public void introduce(boolean displaySsn){
 		
 		if(!displaySsn)
 		{
