@@ -28,6 +28,8 @@ public class Executive extends Employee{
 
 	public Executive(String firstname, String lastname, Address address, int age, int id, String ssn, int pay, double bonus) {
 		super(firstname, lastname, address, age, id, ssn);
+		this.yearlyCompensation = pay;
+		this.yearlyBonus = bonus;
 		// TODO Auto-generated constructor stub
 	}
 
@@ -35,18 +37,14 @@ public class Executive extends Employee{
 	public String toString() {
 		return "Executive [yearlyBonus=" + yearlyBonus + ", yearlyCompensation=" + yearlyCompensation + ", id=" + id
 				+ ", educationLevel=" + educationLevel + ", directDeposit=" + directDeposit + ", firstName=" + firstName
-				+ ", lastName=" + lastName + ", age=" + age + ", ssn=" + ssn + ", address=" + address + ", streetnum="
-				+ streetnum + ", streetName=" + streetName + ", city=" + city + ", zip=" + zip + ", state=" + state
-				+ "]";
+				+ ", lastName=" + lastName + ", age=" + age + ", ssn=" + ssn + ", address=" + address + "]";
 	}
 
 
 	public String toString(boolean test) {
 		return "Executive [yearlyBonus=" + yearlyBonus + ", yearlyCompensation=" + yearlyCompensation + ", id=" + id
 				+ ", educationLevel=" + educationLevel + ", directDeposit=" + directDeposit + ", firstName=" + firstName
-				+ ", lastName=" + lastName + ", age=" + age + ", address=" + address + ", streetnum="
-				+ streetnum + ", streetName=" + streetName + ", city=" + city + ", zip=" + zip + ", state=" + state
-				+ "]";
+				+ ", lastName=" + lastName + ", age=" + age + ", address=" + address + "]";
 	}
 
 	
@@ -66,7 +64,7 @@ public class Executive extends Employee{
 		}
 	}
 	
-	public float computePay(int yearlyCompensation, int yearlyBonus) {
+	public float computePay(double yearlyCompensation, double yearlyBonus) {
 		
 		
 		yearlyBonus = yearlyCompensation + yearlyBonus;

@@ -31,15 +31,13 @@ public class PartTimeHourly extends Employee {
 	public String toString() {
 		return "PartTimeHourly [baseHourlyPay=" + baseHourlyPay + ", id=" + id + ", educationLevel=" + educationLevel
 				+ ", directDeposit=" + directDeposit + ", firstName=" + firstName + ", lastName=" + lastName + ", age="
-				+ age + ", ssn=" + ssn + ", address=" + address + ", streetnum=" + streetnum + ", streetName="
-				+ streetName + ", city=" + city + ", zip=" + zip + ", state=" + state + "]";
+				+ age + ", ssn=" + ssn + ", address=" + address + "]";
 	}
 
 	public String toString(boolean test) {
 		return "PartTimeHourly [baseHourlyPay=" + baseHourlyPay + ", id=" + id + ", educationLevel=" + educationLevel
 				+ ", directDeposit=" + directDeposit + ", firstName=" + firstName + ", lastName=" + lastName + ", age="
-				+ age + ", address=" + address + ", streetnum=" + streetnum + ", streetName="
-				+ streetName + ", city=" + city + ", zip=" + zip + ", state=" + state + "]";
+				+ age + ", address=" + address + "]";
 	}
 	
 	public void introduce(boolean displaySsn){
@@ -58,7 +56,7 @@ public class PartTimeHourly extends Employee {
 		}
 	}
 
-	public float computePay(int baseHourlyPay, int hours) {
+	public float computePay(int hours) {
 		
 		if (hours > 40)
 		{

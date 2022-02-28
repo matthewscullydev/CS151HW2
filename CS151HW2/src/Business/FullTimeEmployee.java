@@ -21,8 +21,7 @@ public abstract class FullTimeEmployee extends Employee {
 	public String toString() {
 		return "FullTimeEmployee [basePay=" + basePay + ", id=" + id + ", educationLevel=" + educationLevel
 				+ ", directDeposit=" + directDeposit + ", firstName=" + firstName + ", lastName=" + lastName + ", age="
-				+ age + ", ssn=" + ssn + ", address=" + address + ", streetnum=" + streetnum + ", streetName="
-				+ streetName + ", city=" + city + ", zip=" + zip + ", state=" + state + "]";
+				+ age + ", ssn=" + ssn + ", address=" + address + "]";
 	}
 
 	public double getBasePay() {

@@ -34,15 +34,13 @@ public class FullTimeHourly extends FullTimeEmployee {
 	public String toString() {
 		return "FullTimeHourly [overtimePay=" + overtimePay + ", id=" + id + ", educationLevel=" + educationLevel
 				+ ", directDeposit=" + directDeposit + ", firstName=" + firstName + ", lastName=" + lastName + ", age="
-				+ age + ", ssn=" + ssn + ", address=" + address + ", streetnum=" + streetnum + ", streetName="
-				+ streetName + ", city=" + city + ", zip=" + zip + ", state=" + state + "]";
+				+ age + ", ssn=" + ssn + ", address=" + address + "]";
 	}
 
 	public String toString(boolean test) {
 		return "FullTimeHourly [overtimePay=" + overtimePay + ", id=" + id + ", educationLevel=" + educationLevel
 				+ ", directDeposit=" + directDeposit + ", firstName=" + firstName + ", lastName=" + lastName + ", age="
-				+ age + ", address=" + address + ", streetnum=" + streetnum + ", streetName="
-				+ streetName + ", city=" + city + ", zip=" + zip + ", state=" + state + "]";
+				+ age + ", address=" + address + "]";
 	}
 
 	
