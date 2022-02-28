@@ -18,6 +18,7 @@ public class FullTimeHourly extends FullTimeEmployee {
 			double basePay) {
 		super(firstname, lastname, address, age, id, ssn, basePay);
 		this.overtimePay = overtimePay;
+		this.basePay = basePay;
 	}
 
 

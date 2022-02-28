@@ -71,6 +71,42 @@ public class BusinessTest {
 		pth2.introduce(false);
 		float salary6 = pth2.computePay(7);
 		System.out.println(salary6);
+		
+		FullTimeHourly fth1 = new FullTimeHourly("Mitch","Moe", thirdAdd, 24, 88140, "132478821", 50.25);
+		FullTimeHourly fth2 = new FullTimeHourly("Nate","Cage", secondAdd, 32, 57290, "098765821", 25.50);
+		
+		System.out.println();
+		
+		System.out.println("Full Time Hourly 1:");
+		fth1.introduce(false);
+		float salary8 = fth1.computePay(40);
+		System.out.println(salary8);
+		
+		System.out.println();
+		
+		System.out.println("Full Time Hourly 2:");
+		fth2.introduce(false);
+		float salary9 = fth2.computePay(34);
+		System.out.println(salary9);
+		
+		Contractor contrac1 = new Contractor("Mitch","Moe", thirdAdd, 24, 88140, "132478821", 50.25);
+		Contractor contrac2 = new Contractor("Mitch","Moe", thirdAdd, 24, 88140, "132478821", 50.25);
+		
+		System.out.println();
+		
+		System.out.println("Contractor 1:");
+		contrac1.introduce(false);
+		float salary10 = fth1.computePay(40);
+		System.out.println(salary10);
+		
+		System.out.println();
+		
+		System.out.println("Contractor 2:");
+		contrac2.introduce(false);
+		float salary11 = fth2.computePay(34);
+		System.out.println(salary11);
+		
+		
 	}
 
 }
