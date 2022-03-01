@@ -57,8 +57,8 @@ public class Customer extends Person {
 	
 	/**
 	 * overridden toString method which takes an input parameter of boolean and if true returns the string without the ssn
-	 * @param test
-	 * @return
+	 * @param test boolean that if true returns this string
+	 * @return return statement that returns string
 	 */
 
 	public String toString(boolean test) {
