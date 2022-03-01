@@ -1,3 +1,19 @@
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 2-28-22
+ * 
+ * PartTimeHourly class
+ * 
+ * <p>
+ * This is the PartTimeHourly class which corresponds to a part time employee
+ * This employee's computePay() method is derived from its attributes of baseHourly pay multiplied by the hours worked.
+ * This class is an extension of the Employee class.
+ * 
+ * </p>
+ */
+
 package Business;
 
 public class PartTimeHourly extends Employee {
@@ -34,11 +50,22 @@ public class PartTimeHourly extends Employee {
 				+ age + ", ssn=" + ssn + ", address=" + address + "]";
 	}
 
+	/**
+	 * overridden toString method which takes an input parameter of boolean and if true returns the string without the ssn
+	 * @param test
+	 * @return
+	 */	
+	
 	public String toString(boolean test) {
 		return "PartTimeHourly [baseHourlyPay=" + baseHourlyPay + ", id=" + id + ", educationLevel=" + educationLevel
 				+ ", directDeposit=" + directDeposit + ", firstName=" + firstName + ", lastName=" + lastName + ", age="
 				+ age + ", address=" + address + "]";
 	}
+	
+	/**
+	 * introduce method which displays all attributes of the object except the SSN if set to false
+	 * 
+	 */
 	
 	public void introduce(boolean displaySsn){
 		
@@ -56,6 +83,16 @@ public class PartTimeHourly extends Employee {
 		}
 	}
 
+	
+
+	/**
+	 * computePay method which multiplies the hours by the base pay for every part time employee.
+	 * if the hours exceed 40 the method returns -1.
+	 * @param basePay
+	 * @param hours
+	 * @return
+	 */
+	
 	public float computePay(int hours) {
 		
 		if (hours > 40)

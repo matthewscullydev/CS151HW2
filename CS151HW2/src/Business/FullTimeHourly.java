@@ -1,9 +1,29 @@
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 2-28-22
+ * 
+ * FullTimeHourly class
+ * 
+ * <p>
+ * This is the FullTimeHourly class which corresponds to a full time hourly worker
+ * this workers computePay() method is determined by the amount of hours*basePay and they
+ * are given an attribute of overtimePay which is factored into the computePay method.
+ * 
+ * This class is an extension of the FullTimeEmployee class.
+ * </p>
+ */
+
+
 package Business;
 
 public class FullTimeHourly extends FullTimeEmployee {
 
 	//instance variables
-	
+	/**
+	 * double attribute for overtime pay
+	 */
 	double overtimePay;
 	
 	public FullTimeHourly() {
@@ -15,10 +35,10 @@ public class FullTimeHourly extends FullTimeEmployee {
 
 
 	public FullTimeHourly(String firstname, String lastname, Address address, int age, int id, String ssn,
-			double basePay) {
+			double basePay, double overtimePay) {
 		super(firstname, lastname, address, age, id, ssn, basePay);
 		this.overtimePay = overtimePay;
-		this.basePay = basePay;
+
 	}
 
 
@@ -37,7 +57,13 @@ public class FullTimeHourly extends FullTimeEmployee {
 				+ ", directDeposit=" + directDeposit + ", firstName=" + firstName + ", lastName=" + lastName + ", age="
 				+ age + ", ssn=" + ssn + ", address=" + address + "]";
 	}
-
+	
+	/**
+	 * overridden toString method which takes an input parameter of boolean and if true returns the string without the ssn
+	 * @param test
+	 * @return
+	 */
+	
 	public String toString(boolean test) {
 		return "FullTimeHourly [overtimePay=" + overtimePay + ", id=" + id + ", educationLevel=" + educationLevel
 				+ ", directDeposit=" + directDeposit + ", firstName=" + firstName + ", lastName=" + lastName + ", age="
@@ -45,6 +71,10 @@ public class FullTimeHourly extends FullTimeEmployee {
 	}
 
 	
+	/**
+	 * introduce method which displays all attributes of the object except the SSN if set to false
+	 * 
+	 */
 	public void introduce(boolean displaySsn){
 		
 		if(!displaySsn)
@@ -61,6 +91,14 @@ public class FullTimeHourly extends FullTimeEmployee {
 		}
 	}
 
+	/**
+	 * full time hourly employee compute pay method which multiplies basePay by number of hours worked.
+	 * it also adds the overtime pay is the overtime pay variable is greater than 0.
+	 *
+	 * @param hours
+	 * @return
+	 */
+	
 	public float computePay(int hours) {
 		
 

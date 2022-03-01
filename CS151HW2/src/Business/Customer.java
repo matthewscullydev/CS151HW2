@@ -1,5 +1,21 @@
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 2-28-22
+ * 
+ * Customer class
+ * <p>
+ * This is the Customer class which inherits the Person classes' attributes. This class has additional
+ * variables for customerID and payment preference. It also has a method for returning the customers
+ * preferred method of payment and introducing the customer.
+ * 
+ * </p>
+ */
+
+
 package Business;
-import java.lang.*;
+
 public class Customer extends Person {
 
 	
@@ -22,8 +38,13 @@ public class Customer extends Person {
 		this.payPreference = payPreference;
 	}
 
-
+	/**
+	 * integer attribute for customerID
+	 */
 	int customerID;
+	/**
+	 * String attribute for payment preference
+	 */
 	String payPreference;
 	
 	
@@ -34,7 +55,11 @@ public class Customer extends Person {
 			
 	}
 	
-
+	/**
+	 * overridden toString method which takes an input parameter of boolean and if true returns the string without the ssn
+	 * @param test
+	 * @return
+	 */
 
 	public String toString(boolean test) {
 		return "Customer [customerID=" + customerID + ", payPreference=" + payPreference + ", firstName=" + firstName
@@ -42,7 +67,10 @@ public class Customer extends Person {
 			
 	}
 	
-	
+	/**
+	 * introduce method which displays all attributes of the object except the SSN.
+	 * 
+	 */
 	public void introduce()
 	
 	{
@@ -53,9 +81,13 @@ public class Customer extends Person {
 		
 	}
 	
+	/**
+	 * makePayment method which returns payment preference of user.
+	 */
+	
 	public void makePayment(){
 		
-			System.out.println(this.payPreference);
+			System.out.println("Payment method = " + this.payPreference);
 		
 	}
 

@@ -1,17 +1,49 @@
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 2-28-22
+ * 
+ * Address class
+ * <p>
+ * This is the main class that the persons refer to for their address, which by effect
+ * is called as a super constructor for the abstract class Employee and all its subsidiaries. 
+ * </p>
+ */
+
 package Business;
 
 public class Address {
-
+	
+	/**
+	 * simple toString method
+	 */
+	
 	@Override
 	public String toString() {
 		return "Address [streetnum=" + streetnum + ", streetName=" + streetName + ", city=" + city + ", zip=" + zip
 				+ ", state=" + state + "]";
 	}
-
+	
+	/**
+	 * street number
+	 */
 	int streetnum;
+	/**
+	 * string attribute for name of the users street
+	 */
 	String streetName;
+	/**
+	 * string attribute for city
+	 */
 	String city;
+	/**
+	 * string attribute for zip code
+	 */
 	String zip;
+	/**
+	 * string attribute for state
+	 */
 	String state;
 	
 	Address(int streetnum, String streetName, String city, String zip, String state){

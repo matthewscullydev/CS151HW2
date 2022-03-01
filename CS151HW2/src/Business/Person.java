@@ -1,3 +1,18 @@
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 2-28-22
+ * 
+ * Person class
+ * 
+ * <p>
+ * This is the Person class which is an extension of the address class. Since a person is an extension of an address,
+ * the default super constructor must have an initialized empty address. This person class includes the first name, last name, ssn, age, and address of a person.
+ * 
+ * </p>
+ */
+
 package Business;
 
 public abstract class Person extends Address {
@@ -27,11 +42,25 @@ public abstract class Person extends Address {
 				+ ", address=" + address;
 	}
 
-
+	/**
+	 * String attribute for first name
+	 */
 	String firstName;
+	/**
+	 * String attribute for last name
+	 */
 	String lastName;
+	/**
+	 * integer attribute for age
+	 */
 	int age;
+	/**
+	 * String attribute for ssn
+	 */
 	String ssn;
+	/**
+	 * address object attribute
+	 */
 	Address address = new Address(streetnum, streetName, city, zip, state);
 	
 	

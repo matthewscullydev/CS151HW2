@@ -1,9 +1,33 @@
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 2-28-22
+ * 
+ * Employee class
+ * 
+ * <p>
+ * This is the abstract Employee class which corresponds to an average Employee
+ * This class is an extension of the Person class and contains attributes corresponding to id, education level, and direct deposit.
+ * </p>
+ */
+
 package Business;
 
 public abstract class Employee extends Person{
-
+	/**
+	 * integer attribute for id
+	 */
 	int id;
+	/**
+	 * String attribute for education level
+	 * NOTE: THIS ATTRIBUTE WAS NOT ASSIGNED AS I DID NOT SEE IT IN THE UML DIAGRAM
+	 */
 	String educationLevel;
+	/**
+	 * boolean attribute for direct deposit
+	 * NOTE: THIS ATTRIBUTE WAS NOT ASSIGNED AS I DID NOT SEE IT IN THE UML DIAGRAM
+	 */
 	boolean directDeposit;
 	
 	public Employee() {
@@ -42,10 +66,5 @@ public abstract class Employee extends Person{
 		this.directDeposit = directDeposit;
 	}
 
-	public float computePay() {
-			
-		float result = 0;
-		
-		return result;
-	}
+	
 }

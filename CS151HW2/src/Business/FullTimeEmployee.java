@@ -1,9 +1,26 @@
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 2-28-22
+ * 
+ * FullTimeEmployee class
+ * 
+ * <p>
+ * This is the FullTimeEmployee class which is an abstract class that is an extension of Employee
+ * it has a baseP
+ * 
+ * </p>
+ */
+
 package Business;
 
 public abstract class FullTimeEmployee extends Employee {
 
 	//vars
-	
+	/**
+	 * double attribute for basePay
+	 */
 	double basePay;
 	
 	public FullTimeEmployee() {
@@ -14,6 +31,7 @@ public abstract class FullTimeEmployee extends Employee {
 
 	public FullTimeEmployee(String firstname, String lastname, Address address, int age, int id, String ssn, double basePay) {
 		super(firstname, lastname, address, age, id, ssn);
+		this.basePay = basePay;
 		// TODO Auto-generated constructor stub
 	}
 

@@ -1,8 +1,33 @@
+
+/**
+ * 
+ * @author Matthew Scully
+ * @version 1.0
+ * @since 2-28-22
+ * 
+ * Executive class
+ * 
+ * <p>
+ * This is the Executive class which corresponds to an executive
+ * This executives computePay() method is derived from its unique attributes, yearlyBonus and yearlyCompensation.
+ * This class is an extension of the Employee class.
+ * 
+ * </p>
+ */
+
 package Business;
 
 public class Executive extends Employee{
 
+	/**
+	 * double attribute for yearlyBonus
+	 */
+	
 	double yearlyBonus;
+	
+	/**
+	 * double attribute for yearlyCompensation
+	 */	
 	double yearlyCompensation;
 	
 	public Executive() {
@@ -41,12 +66,23 @@ public class Executive extends Employee{
 	}
 
 
+	/**
+	 * overridden toString method which takes an input parameter of boolean and if true returns the string without the ssn
+	 * @param test
+	 * @return
+	 */
+	
 	public String toString(boolean test) {
 		return "Executive [yearlyBonus=" + yearlyBonus + ", yearlyCompensation=" + yearlyCompensation + ", id=" + id
 				+ ", educationLevel=" + educationLevel + ", directDeposit=" + directDeposit + ", firstName=" + firstName
 				+ ", lastName=" + lastName + ", age=" + age + ", address=" + address + "]";
 	}
 
+	
+	/**
+	 * introduce method which displays all attributes of the object except the SSN if set to false
+	 * 
+	 */
 	
 	public void introduce(boolean displaySsn){
 		
@@ -63,7 +99,12 @@ public class Executive extends Employee{
 			System.out.println(returnString);
 		}
 	}
-	
+	/**
+	 * computePay method which adds the yearly compensation with the yearly bonus.
+	 * @param basePay
+	 * @param hours
+	 * @return
+	 */
 	public float computePay(double yearlyCompensation, double yearlyBonus) {
 		
 		
