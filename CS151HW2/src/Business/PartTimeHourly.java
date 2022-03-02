@@ -64,7 +64,7 @@ public class PartTimeHourly extends Employee {
 	
 	/**
 	 * introduce method which displays all attributes of the object except the SSN if set to false
-	 * 
+	 * @param displaySsn ssn
 	 */
 	
 	public void introduce(boolean displaySsn){
@@ -88,7 +88,6 @@ public class PartTimeHourly extends Employee {
 	/**
 	 * computePay method which multiplies the hours by the base pay for every part time employee.
 	 * if the hours exceed 40 the method returns -1.
-	 * @param basePay
 	 * @param hours
 	 * @return
 	 */

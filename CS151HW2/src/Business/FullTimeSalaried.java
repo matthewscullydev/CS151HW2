@@ -54,7 +54,7 @@ public class FullTimeSalaried extends FullTimeEmployee {
 
 	/**
 	 * introduce method which displays all attributes of the object except the SSN if set to false
-	 * 
+	 * @param displaySsn ssn
 	 */
 	
 	public void introduce(boolean displaySsn){

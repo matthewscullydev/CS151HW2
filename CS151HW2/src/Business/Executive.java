@@ -81,7 +81,7 @@ public class Executive extends Employee{
 	
 	/**
 	 * introduce method which displays all attributes of the object except the SSN if set to false
-	 * 
+	 * @param displaySsn ssn
 	 */
 	
 	public void introduce(boolean displaySsn){
@@ -101,8 +101,8 @@ public class Executive extends Employee{
 	}
 	/**
 	 * computePay method which adds the yearly compensation with the yearly bonus.
-	 * @param basePay
-	 * @param hours
+	 * @param yearlyCompensation compensation of the executive
+	 * @param yearlyBonus of the executive
 	 * @return
 	 */
 	public float computePay(double yearlyCompensation, double yearlyBonus) {
